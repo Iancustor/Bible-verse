@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+@import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Cormorant:wght@300;500;600;700&family=Kalnia:wght@300;400;500;600;700&family=Libre+Baskerville:wght@400;700&family=Libre+Franklin:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Noto+Serif:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,800;1,900&display=swap");
+
+body {
+  background: rgb(145, 204, 241);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100vh;
+  position: relative;
+}
+#quoteContainer {
+  position: relative;
+  background: white;
+  border-radius: 5px;
+}
+.heading {
+  color: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  font-weight: 900;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+#quote {
+  padding: 2rem 3rem;
+  max-width: 500px;
+  font-size: 1.6rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+#buttons {
+  display: flex;
+  gap: 2.5rem;
+}
+#nextBtn {
+  border: none;
+  font-size: 1.5rem;
+  background-color: black;
+  color: white;
+  padding: 0.4rem;
+  border-radius: 7px;
+}
+#copyBtn {
+  font-size: 2.1rem;
+  border: none;
+  padding: 0.2rem;
+  width: 55px;
+  border-radius: 10px;
+  height: 45px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.message {
+  position: absolute;
+  top: 5%;
+  left: -100%;
+  background: white;
+  padding: 1rem 3rem;
+  font-size: 1.3rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  transition: all 0.6s ease;
+}
+
+.showMessage {
+  left: 4%;
+}
+.verseDescription {
+  display: flex;
+  position: absolute;
+  right: 13px;
+  bottom: 13px;
+  box-shadow: rgb(145, 204, 241) 0px 13px 27px -5px,
+    rgb(145, 204, 241) 0px 8px 16px -8px;
+}
